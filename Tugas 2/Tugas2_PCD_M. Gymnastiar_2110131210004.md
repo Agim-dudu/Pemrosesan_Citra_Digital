@@ -1,5 +1,7 @@
-<p><img src="img/picture2.png"></p>
+<p><img src="img/Picture2.png"></p>
+
 <br>
+
 <h1 align="center">Explorasi Octave Dengan Package Image</h1>
 
 ## Bahan-Bahan Yang di perlukan
