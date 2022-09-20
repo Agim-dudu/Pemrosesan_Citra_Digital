@@ -17,13 +17,13 @@
 ## Output Gambar :
 
  ### 1. Gambar Dan Histogram Dasar
- <p><img src="img/1.png" width="400></p>
+ <p><img src="img/1.png" width="400"></p>
 
  ### 2. Gambar Dan Histogram Merah 
- <p ><img src="img/2.png" width="400></p>
+ <p ><img src="img/2.png" width="400"></p>
 
  ### 3. Gambar Dan Histogram Hijau 
  <p><img src="img/3.png" width="400"></p>
 
  ### 4. Gambar Dan Histogram Biru
- <p><img src="img/4.png" width="400></p>
+ <p><img src="img/4.png" width="400"></p>
