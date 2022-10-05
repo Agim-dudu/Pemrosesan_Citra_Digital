@@ -77,5 +77,25 @@ hasil gambarnya seperti di bawah ini :
 <br>
 <br>
 
-<h1>Code Program Dari 3 Methode Di Atas :<h1> 
+<h2>Code Program Dan Gambar Asli Dari 3 Methode Di Atas :</h2> 
+<p><img src="img/gambar.png" width="500">
 <p><img src="img/code.png" width="500">
+
+<br>
+<p><img src="img/w1.png" width="700">
+<p><img src="img/w2.png" width="300">
+<p align="justify">Untuk mengetahui banyaknya pola pada patterning, dapat langsung kita tentukan dengan menghitung banyaknya font biner atau pattern pengganti terlebih dahulu kemudian ditambahkan dengan 1. Contohnya, saat kita menggunakan 4 x 4 font biner, maka banyaknya pola didapat adalah 17 pola. Pola yang ada pada patterning tidak boleh sama, pola yang sudah ada tidak boleh digunakan lagi (diputar dianggap sama).</p>
+<p align="center"><img src="img/gambar6.png" width="300px">
+
+<br>
+<p><img src="img/w3.png" width="300">
+
+## Menentukan Matriks Dithering (Matriks Treshold)
+
+<p align="justify">Thresholding merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra. Dalam proses ini dibutuhkan suatu nilai batas yang disebut nilai threshold. Nilai intensitas citra yang lebih dari atau sama dengan nilai threshold akan diubah menjadi hitam (0) sedangkan nilai intensitas citra yang kurang dari nilai threshold akan diubah menjadi putih (1).</p>
+
+<br>
+
+<h2>Mengapa hasil dithering dengan matriks dither besar lebih baik dari matriks dither kecil?</h2>
+
+<p align="justify">Perbedaan antara keluaran yang dihasilkan antara matriks dithering kecil dan matriks dithering besar terletak pada sensitifitas nilai piksel aslinya. Contohnya pada 4 x 4 matriks dithering dengan 16 x 16 matriks dithering. Citra yang dihasilkan dari penggunaaan matriks 4x4 memiliki pola halftone yang kurang dibandingkan dengan citra yang diproses menggunakan matriks dithering 16x16. Karena itu hasil dari citra dengan 4x4 matriks dithering memiliki banyak daerah dengan pola yang sama, sehingga hasil yang ditampilkan menjadi kurang baik dibandingkan dithering dengan matriks 16 x 16.
