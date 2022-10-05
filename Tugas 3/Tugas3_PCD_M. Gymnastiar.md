@@ -90,12 +90,26 @@ hasil gambarnya seperti di bawah ini :
 <br>
 <p><img src="img/w3.png" width="300">
 
+Mungkin saja kita membuat ilusi dari beberapa tingkat keabuan di dalam sebuah citra biner yang dalam kenyataanya hanya terdiri dari dua tingkat abu-abu. Hal ini karena sistem visual manusia cenderung meratakan suatu area di sekitar piksel, bukan melihat setiap piksel secara sendiri-sendiri.
+
+Untuk sebagian besar tujuan dithering, cukup menambahkan nilai ambang batas ke setiap piksel (tanpa melakukan normalisasi dengan mengurangi 1⁄2), atau secara setara, untuk membandingkan nilai piksel dengan ambang batas: jika nilai kecerahan piksel kurang dari nomor di sel matriks yang sesuai, plot piksel itu hitam, jika tidak, plot putih.
+<p align="center"><img src="img/gambar5.png" width="400px">
+
+
+<br>
+
 ## Menentukan Matriks Dithering (Matriks Treshold)
 
 <p align="justify">Thresholding merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra. Dalam proses ini dibutuhkan suatu nilai batas yang disebut nilai threshold. Nilai intensitas citra yang lebih dari atau sama dengan nilai threshold akan diubah menjadi hitam (0) sedangkan nilai intensitas citra yang kurang dari nilai threshold akan diubah menjadi putih (1).</p>
 
 <br>
 
+## Menentukan Nilai Ambang Batas Matrik Treshold
+<p align="justify">cara menentukan nilai ambang batas matriks treshold.</p>
+<p align="justify">1. dengan cara manual (trial-and-eror).</p>
+<p align="justify">2. dengan cara histogram yang terpisah antar objek dan backgroundnya.</p>
+
+<br>
 <h2>Mengapa hasil dithering dengan matriks dither besar lebih baik dari matriks dither kecil?</h2>
 
 <p align="justify">Perbedaan antara keluaran yang dihasilkan antara matriks dithering kecil dan matriks dithering besar terletak pada sensitifitas nilai piksel aslinya. Contohnya pada 4 x 4 matriks dithering dengan 16 x 16 matriks dithering. Citra yang dihasilkan dari penggunaaan matriks 4x4 memiliki pola halftone yang kurang dibandingkan dengan citra yang diproses menggunakan matriks dithering 16x16. Karena itu hasil dari citra dengan 4x4 matriks dithering memiliki banyak daerah dengan pola yang sama, sehingga hasil yang ditampilkan menjadi kurang baik dibandingkan dithering dengan matriks 16 x 16.
