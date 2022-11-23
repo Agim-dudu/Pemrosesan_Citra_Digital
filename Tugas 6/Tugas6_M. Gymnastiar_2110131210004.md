@@ -193,52 +193,7 @@ sampai r2 pada
 citra dengan nilai keabuan 0 sampai L – 1)
     <p><img src="img/36.png" >
 
-- Selang [r1
-, r2
-] yang sempit diregang menjadi selang [s1
-, s2
-] yang lebih lebar
-    <p><img src="img/37.png" >
 
-- Nilai-nilai di antara (r1
-,s1
-) and (r2
-,s2
-) menghasilkan penyebaran nilai keabuan
-citra luaran.
-
-- Lokasi (r1
-,s1
-) dan (r2
-,s2
-) menentukan
-bentuk fungsi transformasi.
-    <p><img src="img/38.png" >
-    <p><img src="img/39.png" >
-    <p><img src="img/40.png" >
-
-- Bagaimana menentukan r1 dan r2
-?
-Salah satu pendekatan: 
-- pindai histogram citra, atau pindai pixel-pixel di dalam citra
-- cari pixel bernilai minimum, misalkan rmin
-- cari pixel bernilai maksimum, misalkan rmax
-- pixel-pixel di bawah rmin diset 0
-- Pixel-pixel di atas rmax diset L – 1 
-- r1 = rmin, r2 = rmax
-- tentukan persamaan garis yang menghubungkan titik
-(rmin, 0) dan (rmax, L - 1) dengan persamaan umum
-garis: (y – y1)/(y2 – y1) = (x – x1)/(x2 – x1) 
-- petakan nilai keabuan yang lain di antara (rmin, 0) dan 
-(rmax, L - 1) dengan dengan menggunakan persamaan tersebut
-    <p><img src="img/41.png" >
-<p><img src="img/42.png" >
-<p><img src="img/43.png" >
-
-
-## bersambung dlu
-
-<br>
 
 
 
