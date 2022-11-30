@@ -103,6 +103,80 @@ ilustrasi dari High Boost Filtering :
     <img width="400" src="img/boost filtering.png" >
 </p>
 
+#### __Eksplorasi High Boost Filtering__
+
+#### __Kode Program Manual :__
+
+pkg load image
+
+image = imread("daun.jpg")
+img = rgb2gray(image);
+
+%fungsi untuk membuat gaussian filtering
+gf = fspecial("gaussiasn", 5,2.5);
+
+%fungsi untuk memblurkan gambar
+blur = imfilter(img,gf);
+
+%mengurangi buram pada gmbar
+diff_img img-blur;
+
+%menambahkan perbedaan pada gambar aslinya
+highboost_img = img + diff_img;
+
+subplot(2,2,1);imshow(img);title("Original Image");
+subplot(2,2,2);imshow(blur);title("Blurred Image");
+subplot(2,2,3);imshow(diff_img);title("Difference Image");
+subplot(2,2,4);imshow(highboost_img);title("High Boosted Image");
+
+<p align="center">
+    <img src="img/high boos manual kode.png" >
+</p>
+
+
+#### __Hasil Program__
+<p align="center">
+    <img src="img/hasil high boost_2.png" >
+</p>
+
+
+
+#### __Kode Program Fungsi :__
+clear all;
+close all;
+clc;
+
+img = imread("daun.jpg");
+[x,y,z] = size(img);
+
+if z>1
+  img = rgb2gray(img);
+ end
+
+ subplot(1,2,1);imshow(img);title("Original Image");
+ img = double(img);
+
+ c=3;
+ w_all = c * [0, 0, 0;0, 1, 0;0, 0, 0];
+ w_hight = [0, -1, 0;-1, 4, -1;0, -1, 0];
+ w_boost = w_all + w_high;
+
+ boost1 = conv2(img,w_boost,"same");
+ boost1 = uint8(boost1);
+
+ subplot(1,2,2);imshow(boost1);title("High-Boost Image");
+ 
+<p align="center">
+    <img  width="500" src="img/kode high boost_2.png" >
+</p>
+
+
+ #### __Hasil Program :__
+
+<p align="center">
+    <img width="500" src="img/hasil high boost_2.png" >
+</p>
+
 <br>
 <p><img src="img/Picture5.png" width="300">
 
