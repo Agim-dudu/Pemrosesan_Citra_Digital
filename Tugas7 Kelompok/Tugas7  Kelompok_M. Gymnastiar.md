@@ -139,7 +139,7 @@ Empat macam tepi:
 - tepi garis (line edge), dan 
 - tepi atap (roof edge).
 
-<p align="center"><img width="400" src="img/edge2.png"></p>
+<p align="center"><img width="500" src="img/edge2.png"></p>
 
 ### __Tujuan Pendeteksian Tepi__
 
@@ -160,11 +160,11 @@ Empat macam tepi:
  
 #### __1. Operator Sobel__
 
-<p align="center"><img width="400" src="img/edge4.png"></p>
+<p align="center"><img width="500" src="img/edge4.png"></p>
 
 Di bawah ini contoh lain pendeteksian tepi dengan operator Sobel, dimana hasil konvolusi diambangkan (thresholding) dengan T = 12.
 
-<p align="center"><img width="400" src="img/egde5.png"></p>
+<p align="center"><img width="500" src="img/egde5.png"></p>
 
 #### Operator Sobel Menggunakan Fungsi Octave
 - Kode :
@@ -227,7 +227,7 @@ Langkah-langkah operator Canny:
 
 ### __Kode Edge Detection Manual__
 Kode :
-<p align="center"><img width="400" src="img/kode edge manual.png"></p>
+<p align="center"><img width="600" src="img/kode edge manual.png"></p>
 
 Citra Asli :
 <p align="center"><img width="400" src="img/kode edge citra asli.png"></p>
