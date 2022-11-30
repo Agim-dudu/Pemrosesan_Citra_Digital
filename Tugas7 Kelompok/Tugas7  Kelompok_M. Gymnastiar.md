@@ -139,7 +139,7 @@ Empat macam tepi:
 - tepi garis (line edge), dan 
 - tepi atap (roof edge).
 
-<p align="center"><img width="500" src="img/edge2.png"></p>
+<p align="center"><img width="400" src="img/edge2.png"></p>
 
 ### __Tujuan Pendeteksian Tepi__
 
@@ -147,7 +147,7 @@ Empat macam tepi:
 - Pendeteksian tepi mengekstraksi representasi gambar garis-garis di dalam citra.
 - Pendeteksian tepi berguna dalam mengenali objek di dalam citra (image recognition).
 
-<p align="center"><img width="500" src="img/edge3.png"></p>
+<p align="center"><img width="400" src="img/edge3.png"></p>
 
 <br>
 
@@ -160,24 +160,24 @@ Empat macam tepi:
  
 #### __1. Operator Sobel__
 
-<p align="center"><img width="500" src="img/edge4.png"></p>
+<p align="center"><img width="400" src="img/edge4.png"></p>
 
 Di bawah ini contoh lain pendeteksian tepi dengan operator Sobel, dimana hasil konvolusi diambangkan (thresholding) dengan T = 12.
 
-<p align="center"><img width="500" src="img/egde5.png"></p>
+<p align="center"><img width="400" src="img/egde5.png"></p>
 
 #### Operator Sobel Menggunakan Fungsi Octave
 - Kode :
-<p align="center"><img width="500" src="img/edgesobel.png"></p>
+<p align="center"><img width="400" src="img/edgesobel.png"></p>
 
 - Output :
-<p align="center"><img width="500" src="img/edgesobeloutput.png"></p>
+<p align="center"><img width="400" src="img/edgesobeloutput.png"></p>
 <br>
 
 #### __2. Operator Prewitt__
 Persamaan gradien pada operator Prewitt sama seperti operator Sobel, tetapi menggunakan nilai c = 1 :
 
-<p align="center"><img width="500" src="img/edgeprewitt.png"></p>
+<p align="center"><img width="400" src="img/edgeprewitt.png"></p>
 
 Kekuatan tepi dihitung dengan rumus :
 
@@ -186,10 +186,10 @@ Kekuatan tepi dihitung dengan rumus :
 #### Operator Prewitt Menggunakan Fungsi Octave
 
 - Kode :
-<p align="center"><img width="500" src="img/edgeprewittkode.png"></p>
+<p align="center"><img width="400" src="img/edgeprewittkode.png"></p>
 
 - Output :
-<p align="center"><img width="500" src="img/edgeprewittoutput.png"></p>
+<p align="center"><img width="400" src="img/edgeprewittoutput.png"></p>
 <br>
 
 #### __3. Operator Roberts__
@@ -203,21 +203,21 @@ Dalam bentuk mask konvolusi :
 <p><img width="250" src="img/edgeroberts2.png"></p>
 
 - Contoh berikut ini memeperlihatkan pendeteksian tepi dengan operator Roberts :
-<p align="center"><img width="500" src="img/edgeroberts3.png"></p>
+<p align="center"><img width="400" src="img/edgeroberts3.png"></p>
 
 #### Operator Roberts Menggunakan Fungsi Octave
 - Kode :
-<p align="center"><img width="500" src="img/edgerobertskode.png"></p>
+<p align="center"><img width="400" src="img/edgerobertskode.png"></p>
 <br>
 
 - Output :
-<p align="center"><img width="500" src="img/edgerobertsoutput.png"></p>
+<p align="center"><img width="400" src="img/edgerobertsoutput.png"></p>
 
 #### __4. Operator Canny__
 
 Operator deteksi tepi yang terkenal karena dapat menghasilkan tepi dengan ketebalan 1 pixel
 
-<p align="center"><img width="500" src="img/edgecanny.png"></p>
+<p align="center"><img width="400" src="img/edgecanny.png"></p>
 
 Langkah-langkah operator Canny:
 - Haluskan citra I dengan penapis Gaussian: G * I
@@ -227,4 +227,15 @@ Langkah-langkah operator Canny:
 
 ### __Kode Edge Detection Manual__
 Kode :
-<p align="center"><img width="500" src="img/kode edge manual.png"></p>
+<p align="center"><img width="400" src="img/kode edge manual.png"></p>
+
+Citra Asli :
+<p align="center"><img width="400" src="img/kode edge citra asli.png"></p>
+
+Hasil :
+<p align="center"><img width="400" src="img/kode edge hasil.png"></p>
+
+
+#### __Perbedaan Hasil Keempat Operator__
+
+<p align="center"><img width="400" src="img/alloperator.png"></p>
